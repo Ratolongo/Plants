@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plants</title>
+
+  <style>
+    :root{
+    --header-cor:#8BBC45;
+    --basa-cor: #594432;
+    --info-cor:#8FA63F;
+    --titulo-cor: #A68C5B;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+   
+   
+}
+body{
+
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+     background-color: #262626;
+}
+header{
+    display: flex;  
+
+
+    width: 100vh;
+    height: 60px;
+
+    font-size: 30px;
+
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 2px 2px 10px #2f2f2f;
+    
+    background-color: var(--header-cor);
+
+}
+.base{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    align-items: center;
+
+    width: 97%;
+    height: 300px;
+
+    margin-top: 20px;
+
+    
+
+    border-radius: 20px;
+
+    box-shadow: 2px 2px 10px #2f2f2f;
+
+
+    background-color: var(--basa-cor);
+
+}
+.titulo{
+
+    width: 96%;
+    height: 25px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    margin: 15px auto;
+
+    box-shadow: 2px 2px 10px #2f2f2f;
+    text-shadow:  0.1px 0.1px 0.7px #2c2c2c;;
+
+    background-color: var(--titulo-cor);
+
+}
+.info{
+    display:  flex;
+
+    font-size: 90px;
+
+    width: 93%;
+    height: 70%;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px auto;
+
+    border-radius: 10px;
+
+    box-shadow: 2px 2px 10px #2f2f2f;
+
+    text-shadow:  2px 2px 1px #2c2c2c;;
+
+    background-color: var(--info-cor);
+
+}
+footer{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+
+    position: fixed;
+    bottom: 0px;
+
+    font-size: 10px;
+
+    width: 100vh;
+    height: 30px;
+
+    background-color: var(--header-cor);
+}
+  </style>
+
+
+</head>
+<body>
+  
+  <section>
+    <header>
+       <h1>Plants</h1>
+    </header>
+  </section>
+
+  <div class="base">
+      <div class="titulo">
+          <h3  >Temperatura Ideal: 28° - 32°</h3>
+      </div>
+
+      <div class="info">
+          <p id="temp">30</p>
+          
+          <p>°C</p>
+      </div>
+  </div>
+  <div class="base">
+      <div class="titulo">
+          <h3>Umidade Ideal: 40% - 70%</h3>
+      </div>
+
+      <div class="info">
+          <p id="umidade">50</p>
+          
+          <p>%</p>
+      </div>
+  </div>
+  <div class="base">
+      <div class="titulo">
+          <h3  >Luminosidade Ideal: 60% a 90%</h3>
+      </div>
+
+      <div class="info">
+          <p id="luminosidade">70</p>
+
+          <p>%</p>
+      </div>
+  </div>
+
+  <footer>
+
+    <p>Plants</p>
+
+
+  </footer>
+
+  <script>
+    let temp = document.getElementById("temp");
+    let lumi= document.getElementById("luminosidade");
+    let umid = document.getElementById("umidade");
+
+
+    
+  
+
+
+  </script>
+
+</body>
+</html>
